@@ -6,7 +6,7 @@
    },
    "instruments":{
        "call":{
-           "name": "djembe",
+           "instrument": "djembe",
            "length":12,
          "repeat":1,
           "sound_channels":1,
@@ -49,10 +49,14 @@
             }        
            ]
        },
-       "djembes":[
-      {
-          
-         "name":"djembe1",
+       "djembe1":
+      {   
+         "instrument":"djembe",
+          "group":[
+              {
+                  "name": "djembes"
+              }
+          ],
          "length":6,
          "repeat":2,
           "sound_channels":1,
@@ -77,8 +81,14 @@
             }
          ]
       },
-        {
-         "name":"djembe2",
+        "djembe2":
+       {
+         "instrument":"djembe",
+        "group":[
+              {
+                  "name": "djembes"
+              }
+          ],
          "length":6,
          "repeat":2,
           "sound_channels":1,
@@ -102,11 +112,16 @@
                "note":"slap"
             }
          ]
-      }
-    ],
-    "duns_trad":[
+      },
+    
+    "kenkeni": 
        {
-         "name":"kenkeni",
+         "instrument":"dundun",
+           "group":[
+              {
+                  "name": "duns_trad"
+              }
+          ],
          "length":6,
          "repeat":2,
           "sound_channels":2,
@@ -137,8 +152,14 @@
             }
          ]
       },
+       "sangban":
       {
-         "name":"sangban",
+         "instrument":"dundun",
+          "group":[
+              {
+                  "name": "duns_trad"
+              }
+            ],
          "length":12,
          "repeat":1,
           "sound_channels":2,
@@ -193,8 +214,14 @@
             }
          ]
       },
+       "dounoumba":
        {
-         "name":"dounoumba",
+         "instrument":"dundun",
+           "group":[
+              {
+                  "name": "duns_trad"
+              }
+            ],
          "length":12,
          "repeat":1,
           "sound_channels":2,
@@ -252,6 +279,11 @@
     ],
        "duns_two":{
         "length":12,
+       "group":[
+              {
+                  "name": "duns_two"
+              }
+            ],
          "repeat":1,
           "sound_channels":3,
          "notes":[
